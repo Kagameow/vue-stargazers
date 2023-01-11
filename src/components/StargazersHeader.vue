@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { appConfig } from "@/util/config";
+import { appConfig } from '@/util/config'
 
 const { GITHUB_API_LANGUAGE_LABEL, GITHUB_API_STARS_THRESHOLD } = appConfig
 
@@ -31,14 +31,14 @@ const { GITHUB_API_LANGUAGE_LABEL, GITHUB_API_STARS_THRESHOLD } = appConfig
 }
 
 .header-card:after{
-  content:'';
+  content: '';
   position: absolute;
   background-color: black;
   top: 8px;
   left: 8px;
   right: -8px;
   bottom: -8px;
-  z-index:-1;
+  z-index: -1;
 }
 
 .header h1 {

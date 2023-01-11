@@ -1,8 +1,8 @@
 <template>
   <li class="repository-container" >
     <a :href="repository.url" target="_blank">{{ repository.name }}</a>
-    <h4> {{ repository.stars }} ⭐ </h4>
-    <p class="repository-description"> {{ repository.description }} </p>
+    <h4>{{ repository.stars }} ⭐</h4>
+    <p class="repository-description"> {{ repository.description }}</p>
   </li>
 </template>
 

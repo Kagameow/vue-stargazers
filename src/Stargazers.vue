@@ -1,14 +1,14 @@
 <script setup>
-import {computed, ref} from 'vue'
-import { appConfig } from '@/util/config';
+import { computed, ref } from 'vue'
+import { appConfig } from '@/util/config'
 import { getReposSortedByStars } from '@/api/api-client'
-import { useRequest } from '@/use/useRequest';
+import { useRequest } from '@/use/useRequest'
 
 import IntersectionObserver from '@/components/IntersectionObserver.vue'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
 import StargazersHeader from '@/components/StargazersHeader.vue'
 import ListItemRepository from '@/components/ListItemRepository.vue'
-import ListItemError from "@/components/ListItemError.vue";
+import ListItemError from '@/components/ListItemError.vue'
 
 const { sendRequest: getRepos, isLoading, error, data } = useRequest(getReposSortedByStars)
 const { GITHUB_API_LANGUAGE, GITHUB_API_PER_PAGE } = appConfig
